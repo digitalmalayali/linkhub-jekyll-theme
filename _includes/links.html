@@ -1,0 +1,19 @@
+<main>
+    {% for category in site.data.links %}
+    <h5 class="text-center">{{ category.category }}</h5>
+    {% for item in category.items %}
+    <div class="row">
+        {% if item.tag %}
+        <div class="col link is-center">
+            {% else %}
+            <div class="col is-center">
+                {% endif %}
+                <a class="button outline secondary" href="{{ item.url }}" target="_blank"><span class="iconify-inline"
+                        data-icon="{{ item.icon }}"></span>{{ item.title }}
+                    {% if item.tag %}<span class="tag is-small bd-success text-success">{{ item.tag }}</span>{%
+                    endif %}</a>
+            </div>
+        </div>
+        {% endfor %}
+        {% endfor %}
+</main>

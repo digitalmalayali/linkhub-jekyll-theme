@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site.tagline }} - {{ site.name }}</title>
     <link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">
     <link rel="stylesheet" href="assets/style.css">
@@ -21,45 +23,16 @@
         </header>
 
         <!-- Dark / Light Mode Switch -->
-        <nav class="nav">
             <a class="bd-primary is-rounded is-center" href="#" id="theme-switch"
                 onclick="switchMode(this); return false;" aria-label="Switch Theme" role="button">☀️</a>
             <!-- Social Media Links -->
-            <div class="nav-center">
-                {% include social.html %}
-            </div>
-        </nav>
+            {% include social.html %}
 
-        <!-- Insta Link-in-bio -->
-        <section>
-            <details>
-                <summary class="text-center text-error">Insta Link-in-Bio</summary>
-                <div class="insta-gallery">
-                    {% include insta.html %}
-                </div>
-            </details>
-        </section>
+        <!-- Insta/TikTok/YouTube Link-in-bio -->
+        {% include bio.html %}
 
         <!-- Link Buttons -->
-        <main>
-            {% for category in site.data.links %}
-            <h5 class="text-center">{{ category.category }}</h5>
-            {% for item in category.items %}
-            <div class="row">
-                {% if item.tag %}
-                <div class="col link is-center">
-                    {% else %}
-                    <div class="col is-center">
-                        {% endif %}
-                        <a class="button outline secondary" href="{{ item.url }}" target="_blank"><span
-                                class="iconify-inline" data-icon="{{ item.icon }}"></span>{{ item.title }}
-                            {% if item.tag %}<span class="tag is-small bd-success text-success">{{ item.tag }}</span>{%
-                            endif %}</a>
-                    </div>
-                </div>
-                {% endfor %}
-                {% endfor %}
-        </main>
+        {% include links.html %}
 
         {% include footer.html %}
     </div>

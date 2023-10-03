@@ -1,0 +1,16 @@
+<section>
+    {% for name in site.data.bio %}
+    <details>
+        <summary class="text-center text-error">{{ name.name }} Link-in-Bio</summary>
+        <div class="bio-gallery">
+            {% for item in name.items %}
+            <div class="bio-item">
+                <a href="{{ item.url }}" target="_blank" aria-label="{{ name.name }} link-in-bio">
+                    <img class="bio-img text-center" src="{{ item.image }}" width="100%" height="100%"
+                        alt="{{ name.name }} post"></a>
+            </div>
+            {% endfor %}
+        </div>
+    </details>
+    {% endfor %}
+</section>
