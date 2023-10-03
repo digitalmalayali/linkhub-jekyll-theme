@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "linkhub-jekyll-theme"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Digital Malayali"]
   spec.email         = ["social@digitalmalayali.in"]
 
@@ -14,4 +14,6 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "jekyll", "~> 4.3"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.8.0"
+
+  spec.add_development_dependency "bundler", "~> 2.4"
 end

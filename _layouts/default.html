@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    {% if site.ga4 %}
+    {% include ga4.html %}
+    {% endif %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site.tagline }} - {{ site.name }}</title>

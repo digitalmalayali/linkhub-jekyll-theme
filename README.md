@@ -2,13 +2,42 @@
 
 # Linkhub
 
+![Gem (including prereleases)](https://img.shields.io/gem/v/linkhub-jekyll-theme)
+![Gem](https://img.shields.io/gem/dt/linkhub-jekyll-theme)
+
 A minimal and super-lightweight, free Jekyll theme to create a single-page, link-in-bio website like Linktree or Later.
 
 [**Live Demo ◉**](https://digitalmalayali.github.io/linkhub-jekyll-theme/)
 
 </div>
 
+## Features
+- 😊 Based on the original [Linkhub](https://github.com/digitalmalayali/Linkhub) template!
+- 📸 Add links to Instagram, TikTok, YouTube or any posts similar to Later's link-in-bio! 
+- ⚡ Uses a modified version of the lightweight CSS framework [chota](https://github.com/jenil/chota); the entire size of the site is around 160kb!
+- 🌙 Switch between dark and light modes; automatically choose the mode based on your system preference!
+- 😍 Icons powered by [iconify](https://github.com/iconify/iconify); find tons of free icons for almost any purpose!
+- 🔠 Categorize links; store your links under various categories!
+
 ## Installation
+
+There are multiple ways to install and set up Linkhub. Let's explore each of them.
+
+### Use GitHub Template (Fastest Way)
+
+If you need the quickest way to set this up or if you're a complete beginner to Jekyll, using the GitHub template is the easiest option. You can also fork the repo.
+
+<ol>
+  <li>Go to the [Linkhub theme repository](https://github.com/digitalmalayali/linkhub-jekyll-theme).</li>
+  <li>Click the **Use this template** button.</li>
+  <li>Select **Create a new repository**.</li>
+  <li>Give it a name and click **Create repository**.</li>
+  <li>Edit the `_config.yml` and `_data` files for customization. Check the [Usage guide](https://github.com/digitalmalayali/linkhub-jekyll-theme#usage) for details.</li>
+  <li>Go to **Settings** > **Pages**. Under **Build and deployment**, select **GitHub Actions** as the source.</li>
+<li>If you have a [custom domain](https://docs.github.com/articles/using-a-custom-domain-with-github-pages/), you can enter it. Otherwise, you can view the published website at GitHub.io once the building is complete!</li>
+</ol>
+
+### Install as Ruby Gem
 
 Add this line to your Jekyll site's `Gemfile`:
 
@@ -30,27 +59,27 @@ Or install it yourself as:
 
     $ gem install linkhub-jekyll-theme
 
-## Usage
-Linkhub is super-easy to use!
+## Customization
+Linkhub is super-easy to customize!
 
-### Adding site info
-Edit the `_config.yml` file to specify your website's name, page title, description, and whether to show/hide the verified badge. This information will also be used for meta tags.
+### Adding Site Info
+Edit the `_config.yml` file to specify your website's name, page title, description, Google Analytics and whether to show/hide the verified badge. This information will also be used for meta tags.
 
-### Adding icons
+### Adding Icons
 Icons are powered by the free and open-source icon framework [Iconify](https://github.com/iconify), offering a selection of over 150,000 icons. Visit the [Iconify icon sets website](https://icon-sets.iconify.design/) to search for your preferred icon. Once you find your desired icon, copy its name and use it in the respective fields.
 
-### Adding social media links
+### Adding Social Media Links
 Edit the `social.yml` file in the `_data` folder to add your social media profiles, along with your preferred icons and colors.
 
-### Adding Instagram/TikTok/YouTube etc link-in-bio
-Like Later's link-in-bio feature, you can include external links to your Instagram, TikTok, and other posts by adding name of social media, the link and image URL/path to `bio.yml` in the `_data` folder. You can either upload thumbnails of your Instagram, TikTok and YouTube posts to an image hosting service or create an `images` folder in `assets` and place them there. The image size doesn't matter, and it will be displayed similarly to a 3-column Instagram grid.
+### Adding Instagram/TikTok/YouTube Link-in-bio
+Like Later's link-in-bio feature, you can include external links to your Instagram, TikTok, and other posts by adding the name of social media, the link and image URL/path to `bio.yml` in the `_data` folder. You can either upload thumbnails of your Instagram, TikTok and YouTube posts to an image hosting service or create an `images` folder in `assets` and place them there. The image size doesn't matter, and it will be displayed similarly to a 3-column Instagram grid.
 
-### Adding links
+### Adding Links
 Edit the `links.yml` file in the `_data` folder to add link categories, links, icons, and tags. Refer to the provided examples and the [demo](https://digitalmalayali.github.io/linkhub-jekyll-theme/) for a better understanding.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on [GitHub](https://github.com/digitalmalayali/linkhub-jekyll-theme).
+Bug reports and pull requests are welcome on [GitHub](https://github.com/digitalmalayali/linkhub-jekyll-theme). If you like this theme, please give it a star!
 
 ## Development
 
