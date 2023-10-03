@@ -1,0 +1,5 @@
+{% for social in site.data.social %}
+<a class="brand" href="{{ social.url }}" target="_blank" aria-label="{{ social.name }}">
+    <span class="iconify-inline" data-icon="{{ social.icon }}" style="color: {{ social.color }}"></span>
+</a>
+{% endfor %}

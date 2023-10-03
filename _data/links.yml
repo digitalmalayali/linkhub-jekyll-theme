@@ -1,0 +1,23 @@
+- category: Blogs
+  items:
+    - title: Example
+      url: https://www.example.com
+      icon: ri:film-fill
+      tag: New
+
+    - title: Example 2
+      url: https://www.example.org
+      icon: simple-icons:googlenews
+
+- category: Products
+  items:
+    - title: Example 3
+      url: https://www.example.com
+      icon: ri:ball-pen-fill
+
+- category: Works
+  items:
+    - title: Example 4
+      url: https://www.example.org
+      icon: clarity:language-solid
+      tag: Sale

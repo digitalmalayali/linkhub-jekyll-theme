@@ -1,0 +1,35 @@
+# Site Configuration
+name: 'Linkhub'  # Name of your website
+tagline: 'Links'  # Set your preferred page title
+description: 'A free, open-source Jekyll link-in-bio theme.'  # Also used as a meta description
+favicon: 'https://picsum.photos/100' # Path / URL to the favicon of your website (e.g., 'assets/images/favicon.png')
+logo: 'https://picsum.photos/200' # Path / URL to the logo (e.g., 'assets/images/logo.png')
+url: https://link.example.com # URL of your website
+twitter:
+  username: username # Used for SEO
+  card: summary
+image:
+  path: https://picsum.photos/200 #Used for SEO
+  height: 100
+  width: 100
+  alt: logo
+
+# Verified Badge Configuration
+badge: true  # Set to 'true' or 'false' to enable / disable the badge
+icon: ri:verified-badge-fill  # Enter the icon name for the badge from Iconify Design (https://icon-sets.iconify.design/)
+color: '#dfb221'  # Define the color of the badge
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+ 
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"    
+
+# Exclude
+exclude: [README.md, Gemfile.lock, .jekyll-cache/, Gemfile]

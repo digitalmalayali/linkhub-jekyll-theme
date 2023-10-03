@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{{ site.tagline }} - {{ site.name }}</title>
+    <link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://code.iconify.design/2/2.0.0/iconify.min.js"></script>
+    {% seo %}
+</head>
+
+<body>
+    <div class="container is-full-screen">
+        <header>
+            <div class="top is-center is-vertical-align">
+                <img class="is-rounded" width="75px" height="75px" src="{{ site.logo }}" alt="logo">
+                <h3>{{ site.name }}{% if site.badge == true %}<span class="iconify-inline badge"
+                        data-icon="{{ site.icon }}" style="color: {{ site.color }}"></span>{% endif %}</h3>
+                <p>{{ site.description }}</p>
+            </div>
+        </header>
+
+        <!-- Dark / Light Mode Switch -->
+        <nav class="nav">
+            <a class="bd-primary is-rounded is-center" href="#" id="theme-switch"
+                onclick="switchMode(this); return false;" aria-label="Switch Theme" role="button">☀️</a>
+            <!-- Social Media Links -->
+            <div class="nav-center">
+                {% include social.html %}
+            </div>
+        </nav>
+
+        <!-- Insta Link-in-bio -->
+        <section>
+            <details>
+                <summary class="text-center text-error">Insta Link-in-Bio</summary>
+                <div class="insta-gallery">
+                    {% include insta.html %}
+                </div>
+            </details>
+        </section>
+
+        <!-- Link Buttons -->
+        <main>
+            {% for category in site.data.links %}
+            <h5 class="text-center">{{ category.category }}</h5>
+            {% for item in category.items %}
+            <div class="row">
+                {% if item.tag %}
+                <div class="col link is-center">
+                    {% else %}
+                    <div class="col is-center">
+                        {% endif %}
+                        <a class="button outline secondary" href="{{ item.url }}" target="_blank"><span
+                                class="iconify-inline" data-icon="{{ item.icon }}"></span>{{ item.title }}
+                            {% if item.tag %}<span class="tag is-small bd-success text-success">{{ item.tag }}</span>{%
+                            endif %}</a>
+                    </div>
+                </div>
+                {% endfor %}
+                {% endfor %}
+        </main>
+
+        {% include footer.html %}
+    </div>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
