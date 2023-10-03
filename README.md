@@ -2,8 +2,8 @@
 
 # Linkhub
 
-![Gem (including prereleases)](https://img.shields.io/gem/v/linkhub-jekyll-theme)
-![Gem](https://img.shields.io/gem/dt/linkhub-jekyll-theme)
+[![Gem (including prereleases)](https://img.shields.io/gem/v/linkhub-jekyll-theme)](https://rubygems.org/gems/linkhub-jekyll-theme)
+[![Gem](https://img.shields.io/gem/dt/linkhub-jekyll-theme)](https://rubygems.org/gems/linkhub-jekyll-theme)
 
 A minimal and super-lightweight, free Jekyll theme to create a single-page, link-in-bio website like Linktree or Later.
 
@@ -27,15 +27,13 @@ There are multiple ways to install and set up Linkhub. Let's explore each of the
 
 If you need the quickest way to set this up or if you're a complete beginner to Jekyll, using the GitHub template is the easiest option. You can also fork the repo.
 
-<ol>
-  <li>Go to the [Linkhub theme repository](https://github.com/digitalmalayali/linkhub-jekyll-theme).</li>
-  <li>Click the **Use this template** button.</li>
-  <li>Select **Create a new repository**.</li>
-  <li>Give it a name and click **Create repository**.</li>
-  <li>Edit the `_config.yml` and `_data` files for customization. Check the [Usage guide](https://github.com/digitalmalayali/linkhub-jekyll-theme#usage) for details.</li>
-  <li>Go to **Settings** > **Pages**. Under **Build and deployment**, select **GitHub Actions** as the source.</li>
-<li>If you have a [custom domain](https://docs.github.com/articles/using-a-custom-domain-with-github-pages/), you can enter it. Otherwise, you can view the published website at GitHub.io once the building is complete!</li>
-</ol>
+1. Go to the [Linkhub theme repository](https://github.com/digitalmalayali/linkhub-jekyll-theme).
+2. Click the **Use this template** button.
+3. Select **Create a new repository**.
+4. Give it a name and click **Create repository**.
+5. Edit the `_config.yml` and `_data` files for customization. Check the [Usage guide](https://github.com/digitalmalayali/linkhub-jekyll-theme#usage) for details.
+6. Go to **Settings** > **Pages**. Under **Build and deployment**, select **GitHub Actions** as the source.
+7. If you have a [custom domain](https://docs.github.com/articles/using-a-custom-domain-with-github-pages/), you can enter it. Otherwise, you can view the published website at GitHub.io once the building is complete!
 
 ### Install as Ruby Gem
 
