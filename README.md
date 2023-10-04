@@ -1,6 +1,6 @@
-<p align="center">
+<h1 align="center">
     <strong>Linkhub</strong>
-</p>
+</h1>
 
 <p align="center">
     <a href="https://rubygems.org/gems/linkhub-jekyll-theme">
