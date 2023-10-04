@@ -3,11 +3,17 @@
 </h1>
 
 <p align="center">
-    <a href="https://rubygems.org/gems/linkhub-jekyll-theme">
-        <img src="https://img.shields.io/gem/v/linkhub-jekyll-theme" alt="Gem (including prereleases)">
+    <a href="https://jekyllrb.com">
+        <img src="https://img.shields.io/badge/jekyll-~%3E%204.3-grey?logo=jekyll&labelColor=%23CC0000" alt="Jekyll version">
     </a>
     <a href="https://rubygems.org/gems/linkhub-jekyll-theme">
-        <img src="https://img.shields.io/gem/dt/linkhub-jekyll-theme" alt="Gem">
+        <img src="https://img.shields.io/gem/v/linkhub-jekyll-theme?logo=ruby&logoColor=%23E9573F" alt="Gem (including prereleases)">
+    </a>
+    <a href="https://rubygems.org/gems/linkhub-jekyll-theme">
+        <img src="https://img.shields.io/gem/dt/linkhub-jekyll-theme?logo=ruby&logoColor=%23E9573F" alt="Gem">
+    </a>
+    <a href="https://liberapay.com/zcraber">
+        <img src="https://img.shields.io/badge/liberapay-donate-F6C915?logo=liberapay&logoColor=%23F6C915" alt="Gem">
     </a>
 </p>
 
@@ -39,13 +45,17 @@ There are multiple ways to install and set up Linkhub. Let's explore each of the
 
 If you need the quickest way to set this up or if you're a complete beginner to Jekyll, using the GitHub template is the easiest option. You can also fork the repo.
 
-1. Go to the [Linkhub theme repository](https://github.com/digitalmalayali/linkhub-jekyll-theme).
+1. Visit [Linkhub theme repository](https://github.com/digitalmalayali/linkhub-jekyll-theme).
 2. Click the **Use this template** button.
 3. Select **Create a new repository**.
 4. Give it a name and click **Create repository**.
-5. Edit the `_config.yml` and `_data` files for customization. Check the [Usage guide](https://github.com/digitalmalayali/linkhub-jekyll-theme#usage) for details.
+5. Edit the `_config.yml` and `_data` files for customization. Check the [Usage](https://github.com/digitalmalayali/linkhub-jekyll-theme#usage) guide for details.
 6. Go to **Settings** > **Pages**. Under **Build and deployment**, select **GitHub Actions** as the source.
 7. If you have a [custom domain](https://docs.github.com/articles/using-a-custom-domain-with-github-pages/), you can enter it. Otherwise, you can view the published website at GitHub.io once the building is complete!
+
+### Install as GitHub Remote Theme
+
+Go to your site's `_config.yml` and replace `theme:` with `remote_theme: digitalmalayali/linkhub-jekyll-theme`.
 
 ### Install as Ruby Gem
 

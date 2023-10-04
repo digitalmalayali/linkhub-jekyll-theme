@@ -1,3 +1,6 @@
+# Jekyll
+theme: linkhub-jekyll-theme
+
 # Site Configuration
 name: Linkhub  # Name of your website
 tagline: Links  # Set your preferred page title
@@ -33,4 +36,4 @@ defaults:
       layout: "default"    
 
 # Exclude
-exclude: [README.md, Gemfile.lock, .jekyll-cache/, Gemfile]
+exclude: [README.md, Gemfile.lock, .jekyll-cache/, .github/, Gemfile, LICENSE.txt, funding.yml, linkhub-jekyll-theme.gemspec]
