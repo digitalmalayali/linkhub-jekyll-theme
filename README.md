@@ -68,21 +68,21 @@ If you need the quickest way to set this up or if you're a complete beginner to 
 2. Click the **Use this template** button.
 3. Select **Create a new repository**.
 4. Give it a name and click **Create repository**.
-5. Edit the [_config.yml](_config.yml) and [_data](_data) files for customization. Check the [Customization](#customization) guide for details.
+5. Edit the `_config.yml` and `_data` files for customization. Check the [Configuration](#configuration) guide for details.
 6. Go to **Settings** > **Pages**. Under **Build and deployment**, select **GitHub Actions** as the source.
 7. If you have a [custom domain](https://docs.github.com/articles/using-a-custom-domain-with-github-pages/), you can enter it. Otherwise, you can view the published website at `https://<username>.github.io/linkhub-jekyll-theme` once the building is complete!
 
 ### Install as GitHub Remote Theme
-Go to your site's [_config.yml](_config.yml) and replace `theme:` with `remote_theme: digitalmalayali/linkhub-jekyll-theme`.
+Go to your site's `_config.yml` and replace `theme:` with `remote_theme: digitalmalayali/linkhub-jekyll-theme`.
 
 ### Install as Ruby Gem
-Add this line to your Jekyll site's [Gemfile](Gemfile):
+Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
 gem "linkhub-jekyll-theme"
 ```
 
-And add this line to your Jekyll site's [_config.yml](_config.yml):
+And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
 theme: linkhub-jekyll-theme
