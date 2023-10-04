@@ -7,6 +7,8 @@
 
 A minimal and super-lightweight, free Jekyll theme to create a single-page, link-in-bio website like Linktree or Later.
 
+![mockup](https://github.com/digitalmalayali/linkhub-jekyll-theme/assets/61133303/8592258c-3001-4f64-9af9-245d152a3530)
+
 [**Live Demo ◉**](https://digitalmalayali.github.io/linkhub-jekyll-theme/)
 
 </div>
