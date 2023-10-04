@@ -49,7 +49,7 @@ If you need the quickest way to set this up or if you're a complete beginner to 
 2. Click the **Use this template** button.
 3. Select **Create a new repository**.
 4. Give it a name and click **Create repository**.
-5. Edit the `_config.yml` and `_data` files for customization. Check the [Usage](https://github.com/digitalmalayali/linkhub-jekyll-theme#usage) guide for details.
+5. Edit the `_config.yml` and `_data` files for customization. Check the [Customization](https://github.com/digitalmalayali/linkhub-jekyll-theme#customization) guide for details.
 6. Go to **Settings** > **Pages**. Under **Build and deployment**, select **GitHub Actions** as the source.
 7. If you have a [custom domain](https://docs.github.com/articles/using-a-custom-domain-with-github-pages/), you can enter it. Otherwise, you can view the published website at GitHub.io once the building is complete!
 
