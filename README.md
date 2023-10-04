@@ -1,15 +1,25 @@
-<div align="center">
+<div style="text-align: center;">
 
-# Linkhub
+<h1>Linkhub</h1>
 
-[![Gem (including prereleases)](https://img.shields.io/gem/v/linkhub-jekyll-theme)](https://rubygems.org/gems/linkhub-jekyll-theme)
-[![Gem](https://img.shields.io/gem/dt/linkhub-jekyll-theme)](https://rubygems.org/gems/linkhub-jekyll-theme)
+<p>
+    <a href="https://rubygems.org/gems/linkhub-jekyll-theme">
+        <img src="https://img.shields.io/gem/v/linkhub-jekyll-theme" alt="Gem (including prereleases)">
+    </a>
+    <a href="https://rubygems.org/gems/linkhub-jekyll-theme">
+        <img src="https://img.shields.io/gem/dt/linkhub-jekyll-theme" alt="Gem">
+    </a>
+</p>
 
-A minimal and super-lightweight, free Jekyll theme to create a single-page, link-in-bio website like Linktree or Later.
+<p>A minimal and super-lightweight, free Jekyll theme to create a single-page, link-in-bio website like Linktree or Later.</p>
 
-![mockup](https://github.com/digitalmalayali/linkhub-jekyll-theme/assets/61133303/8592258c-3001-4f64-9af9-245d152a3530)
+<img src="https://github.com/digitalmalayali/linkhub-jekyll-theme/assets/61133303/8592258c-3001-4f64-9af9-245d152a3530" alt="mockup">
 
-[**Live Demo ◉**](https://digitalmalayali.github.io/linkhub-jekyll-theme/)
+<p>
+    <a href="https://digitalmalayali.github.io/linkhub-jekyll-theme/">
+        <strong>Live Demo ◉</strong>
+    </a>
+</p>
 
 </div>
 
