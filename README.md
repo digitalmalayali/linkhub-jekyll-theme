@@ -165,7 +165,7 @@ Edit the [social.yml](_data/social.yml) file in the [_data](_data) folder to add
 ```
 
 ### Adding Instagram/TikTok/YouTube Link-in-bio
-Like Later's link-in-bio feature, you can include external links to your Instagram, TikTok, and other posts by adding the name of social media, the link and image URL/path to [bio.yml](_data/bio.yml) in the [_data](_data) folder. You can either upload thumbnails of your Instagram, TikTok and YouTube posts to an image hosting service or create an `images` folder in [assets](assets) and place them there. The image size doesn't matter, and it will be displayed similarly to a 3-column Instagram grid.
+Like Later's link-in-bio feature, you can include external links to your Instagram, TikTok, and other posts by adding the name of social media, the link and image URL/path to [bio.yml](_data/bio.yml) in the [_data](_data) folder. You can either upload thumbnails of your Instagram, TikTok and YouTube posts to an image hosting service or create an `images` folder in [assets](assets) and place them there. The image size doesn't matter, and it will be displayed similarly to a 3-column Instagram grid. Make sure to add the link you'd like to appear first to the top.
 
 #### `bio.yml`
 ```yml
