@@ -41,9 +41,10 @@
     - [`_config.yml`](#_configyml)
   - [Adding Icons](#adding-icons)
   - [Adding Social Media Links](#adding-social-media-links)
-  - [`social.yml`](#socialyml)
+    - [`social.yml`](#socialyml)
   - [Adding Instagram/TikTok/YouTube Link-in-bio](#adding-instagramtiktokyoutube-link-in-bio)
     - [`bio.yml`](#bioyml)
+  - [Remove Instagram/TikTok/YouTube Link-in-bio](#remove-instagramtiktokyoutube-link-in-bio)
   - [Adding Links](#adding-links)
     - [`links.yml`](#linksyml)
 - [Contributing](#contributing)
@@ -97,7 +98,7 @@ Or install it yourself as:
     $ gem install linkhub-jekyll-theme
 
 ## Configuration
-Linkhub is super-easy to customize!
+Linkhub is super-easy to customize! There is only one `layout` and that is [default.html](_layouts/default.html). Also, there are no `_posts`. 
 
 ### Adding Site Info
 Edit the [_config.yml](_config.yml) file to specify your website's name, page title, description, Google Analytics and whether to show/hide the verified badge. This information will also be used for meta tags.
@@ -151,7 +152,7 @@ Icons are powered by the free and open-source icon framework [Iconify](https://g
 ### Adding Social Media Links
 Edit the [social.yml](_data/social.yml) file in the [_data](_data) folder to add your social media profiles, along with your preferred icons and colors.
 
-### `social.yml`
+#### `social.yml`
 ```yml
 - name: facebook
   url: https://www.facebook.com/example
@@ -180,8 +181,15 @@ Like Later's link-in-bio feature, you can include external links to your Instagr
       image: https://picsum.photos/300/400
 ```
 
+### Remove Instagram/TikTok/YouTube Link-in-bio
+If you'd like to remove Instagram/TikTok/YouTube link-in-bio altogether, remove or comment out the following line in [default.html](_layouts/default.html) layout.
+
+```liquid
+{% include bio.html %}
+```
+
 ### Adding Links
-Edit the [links.yml](_data/links.yml) file in the [_data](_data) folder to add link categories, links, icons, and tags. Refer to the provided examples and the [demo](https://digitalmalayali.github.io/linkhub-jekyll-theme/) for a better understanding.
+Edit the [links.yml](_data/links.yml) file in the [_data](_data) folder to add link categories, links, icons, and tags. Refer to the provided examples and the [demo](https://digitalmalayali.github.io/linkhub-jekyll-theme/) for a better understanding. `tag` variable is optional.
 
 #### `links.yml`
 
