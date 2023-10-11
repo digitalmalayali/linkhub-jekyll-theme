@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "linkhub-jekyll-theme"
-  spec.version       = "0.1.2"
+  spec.version       = "0.1.3"
   spec.authors       = ["Digital Malayali"]
   spec.email         = ["social@digitalmalayali.in"]
 
@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata = {
   "bug_tracker_uri"   => "https://github.com/digitalmalayali/linkhub-jekyll-theme/issues",
-  "changelog_uri"     => "https://github.com/digitalmalayali/linkhub-jekyll-theme/CHANGELOG.md",
+  "changelog_uri"     => "https://github.com/digitalmalayali/linkhub-jekyll-theme/blob/main/CHANGELOG.md",
   "documentation_uri" => "https://github.com/digitalmalayali/linkhub-jekyll-theme#readme",
   "source_code_uri"   => "https://github.com/digitalmalayali/linkhub-jekyll-theme",
   "funding_uri"       => "https://liberapay.com/zcraber"

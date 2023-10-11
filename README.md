@@ -173,6 +173,8 @@ Like Later's link-in-bio feature, you can include external links to your Instagr
   items:
     - url: https://www.example.com
       image: https://picsum.photos/700/400 # You can use paths to images in the assets folder, e.g., assets/images/insta.jpg.
+    - url: https://www.example.com
+      image: https://picsum.photos/200
 
 - name: YouTube
   ratio: vertical # For vertical 9:16 aspect ratio. Ideal for video thumbnails, such as those used on Instagram Reels, YouTube Shorts and TikTok. To use the default 1:1 aspect ratio (square), remove this variable.
@@ -189,7 +191,7 @@ If you'd like to remove Instagram/TikTok/YouTube link-in-bio altogether, remove 
 ```
 
 ### Adding Links
-Edit the [links.yml](_data/links.yml) file in the [_data](_data) folder to add link categories, links, icons, and tags. Refer to the provided examples and the [demo](https://digitalmalayali.github.io/linkhub-jekyll-theme/) for a better understanding. `tag` variable is optional.
+Edit the [links.yml](_data/links.yml) file in the [_data](_data) folder to add link categories, links, icons, and tags. Refer to the provided examples and the [demo](https://digitalmalayali.github.io/linkhub-jekyll-theme/) for a better understanding. `tag` and `icon` variables are optional.
 
 #### `links.yml`
 
@@ -209,7 +211,6 @@ Edit the [links.yml](_data/links.yml) file in the [_data](_data) folder to add l
   items:
     - title: Example 3
       url: https://www.example.com
-      icon: ri:ball-pen-fill
 ```
 
 ## Contributing

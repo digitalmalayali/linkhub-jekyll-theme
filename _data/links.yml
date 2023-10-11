@@ -2,7 +2,7 @@
   items:
     - title: Example
       url: https://www.example.com
-      icon: ri:film-fill
+      icon: ri:film-fill # Icons are optional.
       tag: New
 
     - title: Example 2
@@ -13,7 +13,6 @@
   items:
     - title: Example 3
       url: https://www.example.com
-      icon: ri:ball-pen-fill
 
 - category: Works
   items:

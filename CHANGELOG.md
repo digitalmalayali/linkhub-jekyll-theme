@@ -11,3 +11,7 @@
 - Fixed some padding and margin issues.
 - Added aspect ratio variable for `bio.yml`.
 - Removed `jekyll-seo-tag` plugin.
+
+# [0.1.3](https://github.com/digitalmalayali/linkhub-jekyll-theme/releases/tag/v0.1.3) (11-10-2023)
+- Added Mastodon verification support.
+- Icons in link buttons are optional now.
