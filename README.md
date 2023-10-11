@@ -48,16 +48,18 @@
   - [Adding Links](#adding-links)
     - [`links.yml`](#linksyml)
 - [Contributing](#contributing)
+- [Powered by Linkhub](#powered-by-linkhub)
 - [Development](#development)
 - [License](#license)
 
 ## Features
 - 😊 Based on the original [Linkhub](https://github.com/digitalmalayali/Linkhub) template!
-- 📸 Add links to Instagram, TikTok, YouTube or any posts similar to Later's link-in-bio! 
+- 📸 Add links to Instagram, TikTok, YouTube or any posts/reels/shorts similar to Later's link-in-bio! 
 - ⚡ Uses a modified version of the lightweight CSS framework [chota](https://github.com/jenil/chota); the entire size of the site is around 160kb!
 - 🌙 Switch between dark and light modes; automatically choose the mode based on your system preference!
 - 😍 Icons powered by [iconify](https://github.com/iconify/iconify); find tons of free icons for almost any purpose!
 - 🔠 Categorize links; store your links under various categories!
+- 🔍 SEO friendly; uses all the necessary Open Graph and Twitter Card tags for metadata! 
 
 ## Installation
 There are multiple ways to install and set up Linkhub. Let's explore each of them.
@@ -101,7 +103,7 @@ Or install it yourself as:
 Linkhub is super-easy to customize! There is only one `layout` and that is [default.html](_layouts/default.html). Also, there are no `_posts`. 
 
 ### Adding Site Info
-Edit the [_config.yml](_config.yml) file to specify your website's name, page title, description, Google Analytics and whether to show/hide the verified badge. This information will also be used for meta tags.
+Edit the [_config.yml](_config.yml) file to specify your website's name, page title, description, Google Analytics and whether to show/hide the verified badge. This information will also be used for meta tags. For logo, make sure to use an image with 1:1 aspect ratio.
 
 #### `_config.yml`
 ```yml
@@ -112,16 +114,17 @@ theme: linkhub-jekyll-theme
 name: Linkhub  # Name of your website
 tagline: Links  # Set your preferred page title
 description: A free, open-source Jekyll link-in-bio theme.  # Also used as a meta description
-favicon: https://picsum.photos/100 # Path / URL to the favicon of your website (e.g., 'assets/images/favicon.png')
+favicon: https://picsum.photos/32/32 # Path / URL to the favicon of your website (e.g., 'assets/images/favicon.png')
 logo: https://picsum.photos/200 # Path / URL to the logo (e.g., 'assets/images/logo.png')
 url: https://link.example.com # URL of your website
+locale: en_GB # The value specifies the locale in which these tags are marked up. It follows the format `language_TERRITORY`.
 ga4: G-XXXXXXX # Google Analytics 4 measurement ID (optional). Remove it if not needed.
 twitter:
-  username: username # Used for SEO
-  card: summary
+  username: DigiMalayali # Used for SEO
 image:
-  path: https://picsum.photos/200 #Used for SEO
-  height: 100
+  path: https://picsum.photos/200 # Used for SEO
+  type: jpeg # File format of image. Change according to your image. Supported types: https://en.wikipedia.org/wiki/Media_type#Common_examples
+  height: 100 # Pixels
   width: 100
   alt: logo
 
@@ -129,10 +132,6 @@ image:
 badge: true  # Set to 'true' or 'false' to enable / disable the badge
 icon: ri:verified-badge-fill  # Enter the icon name for the badge from Iconify Design (https://icon-sets.iconify.design/)
 color: '#dfb221'  # Define the color of the badge
-
-# Plugins
-plugins:
-  - jekyll-seo-tag
  
 # Defaults
 defaults:
@@ -143,7 +142,7 @@ defaults:
       layout: "default"    
 
 # Exclude
-exclude: [README.md, Gemfile.lock, .jekyll-cache/, .github/, Gemfile, LICENSE.txt, funding.yml, linkhub-jekyll-theme.gemspec]
+exclude: [README.md, Gemfile.lock, .jekyll-cache/, .github/, CHANGELOG.md, Gemfile, LICENSE.txt, funding.yml, linkhub-jekyll-theme.gemspec]
 ```
 
 ### Adding Icons
@@ -166,7 +165,7 @@ Edit the [social.yml](_data/social.yml) file in the [_data](_data) folder to add
 ```
 
 ### Adding Instagram/TikTok/YouTube Link-in-bio
-Like Later's link-in-bio feature, you can include external links to your Instagram, TikTok, and other posts by adding the name of social media, the link and image URL/path to [bio.yml](_data/bio.yml) in the [_data](_data) folder. You can either upload thumbnails of your Instagram, TikTok and YouTube posts to an image hosting service or create an `images` folder in [assets](assets) and place them there. The image size doesn't matter, and it will be displayed similarly to a 3-column Instagram grid. Make sure to add the link you'd like to appear first to the top.
+Like Later's link-in-bio feature, you can include external links to your Instagram, TikTok, and other posts by adding the name of social media, the link and image URL/path to [bio.yml](_data/bio.yml) in the [_data](_data) folder. You can either upload thumbnails of your Instagram, TikTok and YouTube posts to an image hosting service or create an `images` folder in [assets](assets) and place them there. By default, the images will be displayed with a 1:1 aspect ratio in a 3-column grid. You can use the `ratio` variable for vertical images with a 9:16 aspect ratio. Make sure to add the link you'd like to appear first to the top.
 
 #### `bio.yml`
 ```yml
@@ -176,9 +175,10 @@ Like Later's link-in-bio feature, you can include external links to your Instagr
       image: https://picsum.photos/700/400 # You can use paths to images in the assets folder, e.g., assets/images/insta.jpg.
 
 - name: YouTube
+  ratio: vertical # For vertical 9:16 aspect ratio. Ideal for video thumbnails, such as those used on Instagram Reels, YouTube Shorts and TikTok. To use the default 1:1 aspect ratio (square), remove this variable.
   items:
     - url: https://www.example.com
-      image: https://picsum.photos/300/400
+      image: https://picsum.photos/720/1280
 ```
 
 ### Remove Instagram/TikTok/YouTube Link-in-bio
@@ -213,7 +213,12 @@ Edit the [links.yml](_data/links.yml) file in the [_data](_data) folder to add l
 ```
 
 ## Contributing
-Bug reports and pull requests are welcome on [GitHub](https://github.com/digitalmalayali/linkhub-jekyll-theme). If you like this theme, please give it a star!
+[Bug reports](https://github.com/digitalmalayali/linkhub-jekyll-theme) and [pull requests](https://github.com/digitalmalayali/linkhub-jekyll-theme/pulls) are welcome. If you like this theme, please give it a star! And if you've used this theme on your website, feel free to add it below.
+
+## Powered by Linkhub
+A list of websites that uses Linkhub theme. Please feel free to add your site.
+- [links.digitalmalayali.in](https://links.digitalmalayali.in/)
+- [links.josephvm.in](https://links.josephvm.in/)
 
 ## Development
 To set up your environment to develop this theme, run `bundle install`.

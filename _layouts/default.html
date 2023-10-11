@@ -11,7 +11,22 @@
     <link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://code.iconify.design/2/2.0.0/iconify.min.js"></script>
-    {% seo %}
+    <meta name="description" content="{{ site.description }}">
+    <meta property="og:title" content="{{ site.name }}"/>
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="{{ site.url }}"/>
+    <meta property="og:locale" content="{{ site.locale }}"/>
+    <meta property="og:image" content="{{ site.image.path }}"/>
+    <meta property="og:image:type" content="image/{{ site.image.type }}"/>
+    <meta property="og:image:width" content="{{ site.image.width }}">
+    <meta property="og:image:height" content="{{ site.image.height }}">
+    <meta property="og:image:alt" content="{{ site.image.alt }}">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@{{ site.twitter.username }}" />
+    <meta name="twitter:title" content="{{ site.name }}" />
+    <meta name="twitter:description" content="{{ site.description }}" />
+    <meta name="twitter:image" content="{{ site.image.path }}" />
 </head>
 
 <body>
@@ -26,10 +41,10 @@
         </header>
 
         <!-- Dark / Light Mode Switch -->
-            <a class="bd-primary is-rounded is-center" href="#" id="theme-switch"
-                onclick="switchMode(this); return false;" aria-label="Switch Theme" role="button">☀️</a>
-            <!-- Social Media Links -->
-            {% include social.html %}
+        <a class="bd-primary is-rounded is-center" href="#" id="theme-switch" onclick="switchMode(this); return false;"
+            aria-label="Switch Theme" role="button">☀️</a>
+        <!-- Social Media Links -->
+        {% include social.html %}
 
         <!-- Insta/TikTok/YouTube Link-in-bio -->
         {% include bio.html %}
