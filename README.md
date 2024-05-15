@@ -48,7 +48,7 @@ A minimal and super-lightweight, free Jekyll theme to create a single-page, link
 ## Features
 - 😊 Based on the original [Linkhub](https://github.com/digitalmalayali/Linkhub) template!
 - 📸 Add links to Instagram, TikTok, YouTube or any posts/reels/shorts similar to Later's link-in-bio! 
-- ⚡ Uses a modified version of the lightweight CSS framework [chota](https://github.com/jenil/chota); the entire size of the site is around 160kb!
+- ⚡ Uses a modified version of the lightweight CSS framework [chota](https://github.com/jenil/chota); the entire size of the site is around [604kb](https://radar.cloudflare.com/scan/b4d608b5-fdcf-4950-bbe9-5460bb8dba24)!
 - 🌙 Switch between dark and light modes; automatically choose the mode based on your system preference!
 - 😍 Icons powered by [iconify](https://github.com/iconify/iconify); find tons of free icons for almost any purpose!
 - 🔠 Categorize links; store your links under various categories!
