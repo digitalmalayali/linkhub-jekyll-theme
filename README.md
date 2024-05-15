@@ -1,56 +1,49 @@
-<h1 align="center">
-    <strong>Linkhub</strong>
-</h1>
+<div align="center">
 
-<p align="center">
-    <a href="https://jekyllrb.com">
-        <img src="https://img.shields.io/badge/jekyll-~%3E%204.3-grey?logo=jekyll&labelColor=%23CC0000" alt="Jekyll version">
-    </a>
-    <a href="https://rubygems.org/gems/linkhub-jekyll-theme">
-        <img src="https://img.shields.io/gem/v/linkhub-jekyll-theme?logo=ruby&logoColor=%23E9573F" alt="Gem (including prereleases)">
-    </a>
-    <a href="https://rubygems.org/gems/linkhub-jekyll-theme">
-        <img src="https://img.shields.io/gem/dt/linkhub-jekyll-theme?logo=ruby&logoColor=%23E9573F" alt="Gem">
-    </a>
-    <a href="https://liberapay.com/zcraber">
-        <img src="https://img.shields.io/badge/liberapay-donate-F6C915?logo=liberapay&logoColor=%23F6C915" alt="Gem">
-    </a>
-</p>
+# Linkhub
 
-<p align="center">A minimal and super-lightweight, free Jekyll theme to create a single-page, link-in-bio website like Linktree or Later.</p>
+[![Static Badge](https://img.shields.io/badge/jekyll-~%3E%204.3-grey?logo=jekyll&labelColor=%23CC0000)](https://jekyllrb.com)
+[![Gem Version](https://img.shields.io/gem/v/linkhub-jekyll-theme?logo=rubygems&logoColor=white&labelColor=%23E9573F&color=grey)](https://rubygems.org/gems/linkhub-jekyll-theme)
+[![Gem Total Downloads](https://img.shields.io/gem/dt/linkhub-jekyll-theme?logo=rubygems&logoColor=white&labelColor=%23E9573F&color=grey)](https://rubygems.org/gems/linkhub-jekyll-theme)
 
-<p align="center">
-    <img src="https://github.com/digitalmalayali/linkhub-jekyll-theme/assets/61133303/9c861ba3-90fe-45c6-a87d-af01152b17bb" alt="mockup">
-</p>
+[![Static Badge](https://img.shields.io/badge/html-template-grey?logo=html5&logoColor=white&labelColor=E34F26)](https://github.com/digitalmalayali/linkhub)
+[![Static Badge](https://img.shields.io/badge/wordpress-theme-grey?logo=wordpress&labelColor=21759B)](https://github.com/digitalmalayali/linkhub-wordpress-theme)
 
-<p align="center">
-    <a href="https://digitalmalayali.github.io/linkhub-jekyll-theme/">
-        <strong>Live Demo ◉</strong>
-    </a>
-</p>
+[![Static Badge](https://img.shields.io/badge/liberapay-donate-F6C915?logo=liberapay)](https://liberapay.com/zcraber)
+
+A minimal and super-lightweight, free Jekyll theme to create a single-page, link-in-bio website like Linktree or Later.
+
+[![mockup](https://github-production-user-asset-6210df.s3.amazonaws.com/61133303/272500069-9c861ba3-90fe-45c6-a87d-af01152b17bb.png)](https://digitalmalayali.github.io/linkhub-jekyll-theme/)
+
+[**Live Demo ◉**](https://digitalmalayali.github.io/linkhub-jekyll-theme/)
+
+</div>
 
 ## Contents
-- [Contents](#contents)
-- [Features](#features)
-- [Installation](#installation)
-  - [Use GitHub Template (Fastest Way)](#use-github-template-fastest-way)
-  - [Install as GitHub Remote Theme](#install-as-github-remote-theme)
-  - [Install as Ruby Gem](#install-as-ruby-gem)
-- [Configuration](#configuration)
-  - [Adding Site Info](#adding-site-info)
-    - [`_config.yml`](#_configyml)
-  - [Adding Icons](#adding-icons)
-  - [Adding Social Media Links](#adding-social-media-links)
-    - [`social.yml`](#socialyml)
-  - [Adding Instagram/TikTok/YouTube Link-in-bio](#adding-instagramtiktokyoutube-link-in-bio)
-    - [`bio.yml`](#bioyml)
-  - [Remove Instagram/TikTok/YouTube Link-in-bio](#remove-instagramtiktokyoutube-link-in-bio)
-  - [Adding Links](#adding-links)
-    - [`links.yml`](#linksyml)
-- [Contributing](#contributing)
-- [Powered by Linkhub](#powered-by-linkhub)
-- [Development](#development)
-- [License](#license)
+- [Linkhub](#linkhub)
+  - [Contents](#contents)
+  - [Features](#features)
+  - [Installation](#installation)
+    - [Use GitHub Template (Fastest Way)](#use-github-template-fastest-way)
+    - [Install as GitHub Remote Theme](#install-as-github-remote-theme)
+    - [Install as Ruby Gem](#install-as-ruby-gem)
+  - [Configuration](#configuration)
+    - [Adding Site Info](#adding-site-info)
+      - [`_config.yml`](#_configyml)
+    - [Adding Icons](#adding-icons)
+    - [Adding Social Media Links](#adding-social-media-links)
+      - [`social.yml`](#socialyml)
+    - [Adding Instagram/TikTok/YouTube Link-in-bio](#adding-instagramtiktokyoutube-link-in-bio)
+      - [`bio.yml`](#bioyml)
+    - [Remove Instagram/TikTok/YouTube Link-in-bio](#remove-instagramtiktokyoutube-link-in-bio)
+    - [Adding Links](#adding-links)
+      - [`links.yml`](#linksyml)
+      - [Adding Custom Icons](#adding-custom-icons)
+    - [Remove Dark/Light Mode Switch](#remove-darklight-mode-switch)
+  - [Contributing](#contributing)
+  - [Powered by Linkhub](#powered-by-linkhub)
+  - [Development](#development)
+  - [License](#license)
 
 ## Features
 - 😊 Based on the original [Linkhub](https://github.com/digitalmalayali/Linkhub) template!
@@ -103,7 +96,7 @@ Or install it yourself as:
 Linkhub is super-easy to customize! There is only one `layout` and that is [default.html](_layouts/default.html). Also, there are no `_posts`. 
 
 ### Adding Site Info
-Edit the [_config.yml](_config.yml) file to specify your website's name, page title, description, Google Analytics and whether to show/hide the verified badge. This information will also be used for meta tags. For logo, make sure to use an image with 1:1 aspect ratio.
+Edit the [_config.yml](_config.yml) file to specify your website's name, page title, description, Google Analytics, and whether to show or hide the verified badge. This information will also be used for meta tags. For the logo, make sure to use an image with a 1:1 aspect ratio.
 
 #### `_config.yml`
 ```yml
@@ -120,18 +113,19 @@ url: https://link.example.com # URL of your website
 locale: en_GB # The value specifies the locale in which these tags are marked up. It follows the format `language_TERRITORY`.
 ga4: G-XXXXXXX # Google Analytics 4 measurement ID (optional). Remove it if not needed.
 twitter:
-  username: DigiMalayali # Used for SEO
+  username: UserName # Used for SEO
 image:
-  path: https://picsum.photos/200 # Used for SEO
+  path: assets/images/example.jpg # Used for SEO (og:image, twitter:image)
   type: jpeg # File format of image. Change according to your image. Supported types: https://en.wikipedia.org/wiki/Media_type#Common_examples
   height: 100 # Pixels
   width: 100
   alt: logo
 
 # Verified Badge Configuration
-badge: true  # Set to 'true' or 'false' to enable / disable the badge
-icon: ri:verified-badge-fill  # Enter the icon name for the badge from Iconify Design (https://icon-sets.iconify.design/)
-color: '#dfb221'  # Define the color of the badge
+badge:
+  enable: true # Set to 'true' or 'false' to enable / disable the badge
+  icon: ri:verified-badge-fill  # Enter the icon name for the badge from Iconify Design (https://icon-sets.iconify.design/)
+  color: '#dfb221'  # Define the color of the badge
  
 # Defaults
 defaults:
@@ -147,6 +141,8 @@ exclude: [README.md, Gemfile.lock, .jekyll-cache/, .github/, CHANGELOG.md, Gemfi
 
 ### Adding Icons
 Icons are powered by the free and open-source icon framework [Iconify](https://github.com/iconify), offering a selection of over 150,000 icons. Visit the [Iconify icon sets website](https://icon-sets.iconify.design/) to search for your preferred icon. Once you find your desired icon, copy its name and use it in the respective fields.
+
+You can use custom icons for [Links](#adding-links).
 
 ### Adding Social Media Links
 Edit the [social.yml](_data/social.yml) file in the [_data](_data) folder to add your social media profiles, along with your preferred icons and colors.
@@ -184,7 +180,7 @@ Like Later's link-in-bio feature, you can include external links to your Instagr
 ```
 
 ### Remove Instagram/TikTok/YouTube Link-in-bio
-If you'd like to remove Instagram/TikTok/YouTube link-in-bio altogether, remove or comment out the following line in [default.html](_layouts/default.html) layout.
+If you'd like to remove Instagram/TikTok/YouTube link-in-bio altogether, remove or comment out the following line in [default.html](_layouts/default.html) layout:
 
 ```liquid
 {% include bio.html %}
@@ -205,26 +201,37 @@ Edit the [links.yml](_data/links.yml) file in the [_data](_data) folder to add l
 
     - title: Example 2
       url: https://www.example.org
-      icon: simple-icons:googlenews
+      custom-icon: <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" id="_x32_" width="800" height="800" version="1.1" viewBox="0 0 512 512"><style>.st0{fill:#000}</style><path d="M378.409 0H195.118l-9.314 9.315L57.017 138.101l-9.314 9.315V426.105c0 47.36 38.528 85.896 85.895 85.896h244.811c47.361 0 85.888-38.535 85.888-85.896V85.896C464.297 38.528 425.77 0 378.409 0zm54.084 426.104c0 29.877-24.214 54.091-54.084 54.091H133.598c-29.877 0-54.091-24.214-54.091-54.091V160.592h83.717c24.884 0 45.07-20.179 45.07-45.071V31.804h170.114c29.87 0 54.084 24.214 54.084 54.091v340.209z" class="st0"/><path d="m180.296 296.668-4.846-.67c-10.63-1.487-14.265-4.978-14.265-10.104 0-5.78 4.309-9.817 12.383-9.817 5.653 0 11.305 1.62 15.745 3.764 1.886.942 3.903 1.487 5.789 1.487 4.845 0 8.612-3.63 8.612-8.616 0-3.226-1.481-5.921-4.71-7.939-5.384-3.372-15.476-6.06-25.572-6.06-19.781 0-32.436 11.171-32.436 27.998 0 16.15 10.232 24.898 28.938 27.454l4.846.67c10.903 1.48 14.129 4.846 14.129 10.229 0 6.326-5.247 10.766-14.939 10.766-6.727 0-12.111-1.745-19.645-5.921-1.616-.942-3.634-1.62-5.788-1.62-5.115 0-8.885 3.91-8.885 8.756 0 3.226 1.616 6.326 4.713 8.344 6.054 3.764 15.878 7.8 28.798 7.8 23.823 0 35.934-12.24 35.934-28.795 0-16.554-9.824-25.038-28.801-27.726zM281.108 259.382c-4.577 0-7.939 2.43-9.556 7.674l-16.69 54.51h-.402l-17.634-54.51c-1.745-5.244-4.978-7.674-9.551-7.674-5.653 0-9.692 4.176-9.692 9.287 0 1.347.269 2.834.67 4.175l23.286 68.104c2.96 8.477 6.727 11.57 12.652 11.57 5.785 0 9.555-3.093 12.516-11.57l23.282-68.104c.406-1.341.674-2.828.674-4.175.001-5.111-3.903-9.287-9.555-9.287zM364.556 300.836h-18.841c-5.114 0-8.344 3.1-8.344 7.806 0 4.713 3.23 7.814 8.344 7.814h6.193c.538 0 .803.258.803.803 0 3.505-.265 6.598-1.075 9.014-1.882 5.796-7.67 9.426-14.669 9.426-7.943 0-12.921-3.903-14.939-10.096-1.075-3.365-1.48-7.8-1.48-19.648 0-11.842.405-16.15 1.48-19.516 2.018-6.325 6.867-10.228 14.67-10.228 5.924 0 10.362 1.885 13.859 6.724 2.695 3.777 5.387 4.852 8.749 4.852 4.981 0 9.021-3.638 9.021-8.888 0-2.151-.674-4.035-1.752-5.921-4.842-8.204-15.071-14.264-29.877-14.264-16.287 0-28.935 7.408-33.644 22.204-2.022 6.466-2.559 11.576-2.559 25.038 0 13.454.538 18.573 2.559 25.031 4.709 14.802 17.357 22.204 33.644 22.204 16.286 0 28.668-8.204 33.374-22.881 1.617-5.111 2.29-12.645 2.29-20.716v-.95c0-4.98-2.824-7.808-7.806-7.808z" class="st0"/></svg>
+      # Paste the SVG markup for custom icon
 
 - category: Products
   items:
     - title: Example 3
       url: https://www.example.com
 ```
+#### Adding Custom Icons
+As shown in the example above, you can use the `custom-icon` variable to insert custom SVG icons. Be sure to paste the entire SVG markup. You can use [SVGOMG](https://jakearchibald.github.io/svgomg/) to optimize the SVG.
+
+### Remove Dark/Light Mode Switch
+To remove the dark/light mode switch, edit the [default.html](_layouts/default.html) layout file and remove or comment out the following line:
+
+```liquid
+{% include theme-switch.html %}
+```
+Please note that this will not remove the functionality that detects and sets the dark/light mode based on the user's system preference.
 
 ## Contributing
 [Bug reports](https://github.com/digitalmalayali/linkhub-jekyll-theme) and [pull requests](https://github.com/digitalmalayali/linkhub-jekyll-theme/pulls) are welcome. If you like this theme, please give it a star! And if you've used this theme on your website, feel free to add it below.
 
 ## Powered by Linkhub
-A list of websites that uses Linkhub theme. Please feel free to add your site.
+A list of websites that use the Linkhub theme. Please feel free to add your site.
 - [links.digitalmalayali.in](https://links.digitalmalayali.in/)
 - [links.josephvm.in](https://links.josephvm.in/)
 
 ## Development
 To set up your environment to develop this theme, run `bundle install`.
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+Your theme is set up just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
 
 When your theme is released, only the files in [_layouts](_layouts), [_includes](_includes), [_data](_data) and [assets](assets) tracked with Git will be bundled.
 

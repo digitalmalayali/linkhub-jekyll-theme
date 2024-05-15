@@ -11,18 +11,19 @@ url: https://link.example.com # URL of your website
 locale: en_GB # The value specifies the locale in which these tags are marked up. It follows the format `language_TERRITORY`.
 ga4: G-XXXXXXX # Google Analytics 4 measurement ID (optional). Remove it if not needed.
 twitter:
-  username: DigiMalayali # Used for SEO
+  username: UserName # Used for SEO
 image:
-  path: https://picsum.photos/200 # Used for SEO
+  path: assets/images/example.jpg # Used for SEO (og:image, twitter:image)
   type: jpeg # File format of image. Change according to your image. Supported types: https://en.wikipedia.org/wiki/Media_type#Common_examples
   height: 100 # Pixels
   width: 100
   alt: logo
 
 # Verified Badge Configuration
-badge: true  # Set to 'true' or 'false' to enable / disable the badge
-icon: ri:verified-badge-fill  # Enter the icon name for the badge from Iconify Design (https://icon-sets.iconify.design/)
-color: '#dfb221'  # Define the color of the badge
+badge:
+  enable: true # Set to 'true' or 'false' to enable / disable the badge
+  icon: ri:verified-badge-fill  # Enter the icon name for the badge from Iconify Design (https://icon-sets.iconify.design/)
+  color: '#dfb221'  # Define the color of the badge
  
 # Defaults
 defaults:

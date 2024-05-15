@@ -15,3 +15,11 @@
 # [0.1.3](https://github.com/digitalmalayali/linkhub-jekyll-theme/releases/tag/v0.1.3) (11-10-2023)
 - Added Mastodon verification support.
 - Icons in link buttons are optional now.
+
+# [0.1.4](https://github.com/digitalmalayali/linkhub-jekyll-theme/releases/tag/v0.1.4) (15-05-2024)
+- Added custom icon support.
+- Fixed Open Graph image URL.
+- Site name and tagline are aligned to center.
+- Added pointer cursor for summary tag in `bio.yml`.
+- Fixed a minor margin issue of verified badge.
+- Option to hide Dark/light mode switch.

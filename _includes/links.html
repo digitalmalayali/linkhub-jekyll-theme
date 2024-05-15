@@ -8,8 +8,9 @@
             {% else %}
             <div class="col is-center">
                 {% endif %}
-                <a class="button outline secondary" href="{{ item.url }}" target="_blank">{% if item.icon %}<span class="iconify-inline"
-                        data-icon="{{ item.icon }}"></span>{% endif %}{{ item.title }}
+                <a class="button outline secondary" href="{{ item.url }}" target="_blank">{% if item.icon %}<span
+                        class="iconify-inline" data-icon="{{ item.icon }}"></span>{% endif %}{% if item.custom-icon
+                    %}<span class="custom-icon">{{ item.custom-icon }}</span>{% endif %}{{ item.title }}
                     {% if item.tag %}<span class="tag is-small bd-success text-success">{{ item.tag }}</span>{%
                     endif %}</a>
             </div>
