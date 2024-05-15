@@ -23,3 +23,6 @@
 - Added pointer cursor for summary tag in `bio.yml`.
 - Fixed a minor margin issue of verified badge.
 - Option to hide Dark/light mode switch.
+
+# [0.1.5](https://github.com/digitalmalayali/linkhub-jekyll-theme/releases/tag/v0.1.5) (15-05-2024)
+- Fixed Open Graph image URL (again!).
