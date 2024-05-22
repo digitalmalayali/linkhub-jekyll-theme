@@ -39,6 +39,8 @@ A minimal and super-lightweight, free Jekyll theme to create a single-page, link
     - [Adding Links](#adding-links)
       - [`links.yml`](#linksyml)
       - [Adding Custom Icons](#adding-custom-icons)
+      - [Setting Button Width](#setting-button-width)
+      - [Setting Icon Position](#setting-icon-position)
     - [Remove Dark/Light Mode Switch](#remove-darklight-mode-switch)
   - [Contributing](#contributing)
   - [Powered by Linkhub](#powered-by-linkhub)
@@ -113,7 +115,7 @@ favicon:
 logo: https://picsum.photos/200 # Path / URL to the logo (e.g., 'assets/images/logo.png')
 url: https://link.example.com # URL of your website
 locale: en_GB # The value specifies the locale in which these tags are marked up. It follows the format `language_TERRITORY`.
-ga4: G-XXXXXXX # Google Analytics 4 measurement ID (optional). Remove it if it’s not needed..
+ga4: # Google Analytics 4 measurement ID, for e.g. G-XXXXXXX (optional). Remove it if it’s not needed.
 twitter:
   username: UserName # Used for SEO
 image:
@@ -170,15 +172,15 @@ Like Later's link-in-bio feature, you can include external links to your Instagr
 - name: Instagram
   items:
     - url: https://www.example.com
-      image: https://picsum.photos/700/400 # You can use paths to images in the assets folder, e.g., assets/images/insta.jpg.
+      image: https://picsum.photos/700/400.webp # You can use paths to images in the assets folder, e.g., assets/images/insta.jpg.
     - url: https://www.example.com
-      image: https://picsum.photos/200
+      image: https://picsum.photos/200.webp
 
 - name: YouTube
   ratio: vertical # For vertical 9:16 aspect ratio. Ideal for video thumbnails, such as those used on Instagram Reels, YouTube Shorts and TikTok. To use the default 1:1 aspect ratio (square), remove this variable.
   items:
     - url: https://www.example.com
-      image: https://picsum.photos/720/1280
+      image: https://picsum.photos/720/1280.webp
 ```
 
 ### Remove Instagram/TikTok/YouTube Link-in-bio
@@ -194,14 +196,14 @@ Edit the [links.yml](_data/links.yml) file in the [_data](_data) folder to add l
 #### `links.yml`
 
 ```yml
-fixed-button-width: false # Set to true or remove it if it’s not needed
-icon-position: left # Set to left or remove it if it's not needed
+fixed-button-width: false # Set to true/false
+icon-position: left # Set to left/right
 buttons:
   - category: Blogs
     items:
     - title: Example
       url: https://www.example.com
-      icon: ri:film-fill # Icons are optional
+      icon: tdesign:activity # Icons are optional
       tag: Tag
 
     - title: Example 2
@@ -217,11 +219,17 @@ buttons:
     items:
     - title: Example 4
       url: https://www.example.org
-      icon: clarity:language-solid
+      icon: ion:flower-sharp
       tag: New
 ```
 #### Adding Custom Icons
 As shown in the example above, you can use the `custom-icon` variable to insert custom SVG icons. Be sure to paste the entire SVG markup. You can use [SVGOMG](https://jakearchibald.github.io/svgomg/) to optimize the SVG.
+
+#### Setting Button Width
+You can set the width of buttons to `fixed` using the variable `fixed-button-width: true`. This will set the width of all buttons to a fixed 50%. You can change this value in [links.html](https://github.com/digitalmalayali/linkhub-jekyll-theme/blob/main/_includes/links.html#L12).
+
+#### Setting Icon Position
+With version 0.1.6, it's now possible to set the position of icons to left or right using `icon-position: left`. Please note that setting the icon position will set it for all buttons. You can't do it for individual buttons. And tags will switch to the opposite position.
 
 ### Remove Dark/Light Mode Switch
 To remove the dark/light mode switch, edit the [default.html](_layouts/default.html) layout file and remove or comment out the following line:

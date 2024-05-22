@@ -11,7 +11,7 @@ favicon:
 logo: https://picsum.photos/200.webp # Path / URL to the logo (e.g., 'assets/images/logo.png')
 url: https://link.example.com # URL of your website
 locale: en_GB # The value specifies the locale in which these tags are marked up. It follows the format `language_TERRITORY`.
-ga4: G-XXXXXXX # Google Analytics 4 measurement ID (optional). Remove it if it’s not needed..
+ga4: # Google Analytics 4 measurement ID, for e.g. G-XXXXXXX (optional). Remove it if it’s not needed.
 twitter:
   username: UserName # Used for SEO
 image:

@@ -27,7 +27,7 @@
 # [0.1.5](https://github.com/digitalmalayali/linkhub-jekyll-theme/releases/tag/v0.1.5) (15-05-2024)
 - Fixed Open Graph image URL (again!).
 
-# [0.1.6](https://github.com/digitalmalayali/linkhub-jekyll-theme/releases/tag/v0.1.6) (22-05-2024)
+# [0.1.6](https://github.com/digitalmalayali/linkhub-jekyll-theme/releases/tag/v0.1.6) (23-05-2024)
 - Fixed favicon image type.
 - Added option to set fixed button width.
 - Added option to set icon position to left or right.

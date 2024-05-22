@@ -1,11 +1,11 @@
-fixed-button-width: false # Set to true/false or remove it if it’s not needed
-icon-position: left # Set to left/right or remove it if it's not needed
+fixed-button-width: false # Set to true/false
+icon-position: left # Set to left/right
 buttons:
   - category: Blogs
     items:
     - title: Example
       url: https://www.example.com
-      icon: ri:film-fill # Icons are optional
+      icon: tdesign:activity # Icons are optional
       tag: Tag
 
     - title: Example 2
@@ -21,5 +21,5 @@ buttons:
     items:
     - title: Example 4
       url: https://www.example.org
-      icon: clarity:language-solid
+      icon: ion:flower-sharp
       tag: New
