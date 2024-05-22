@@ -50,7 +50,7 @@ A minimal and super-lightweight, free Jekyll theme to create a single-page, link
 ## Features
 - 😊 Based on the original [Linkhub](https://github.com/digitalmalayali/Linkhub) template!
 - 📸 Add links to Instagram, TikTok, YouTube or any posts/reels/shorts similar to Later's link-in-bio! Demo images are powered by [Lorem Picsum](https://github.com/DMarby/picsum-photos).
-- ⚡ Uses a modified version of the lightweight CSS framework [chota](https://github.com/jenil/chota); the entire size of the site is around [604kb](https://radar.cloudflare.com/scan/b4d608b5-fdcf-4950-bbe9-5460bb8dba24)!
+- ⚡ Uses a modified version of the lightweight CSS framework [chota](https://github.com/jenil/chota); the entire size of the site is around [362kb](https://radar.cloudflare.com/scan/52adb775-26b7-4130-9297-e74d332c507f)!
 - 🌙 Switch between dark and light modes; automatically choose the mode based on your system preference!
 - 😍 Icons powered by [iconify](https://github.com/iconify/iconify); find tons of free icons for almost any purpose!
 - 🔠 Categorize links; store your links under various categories!
@@ -229,7 +229,7 @@ As shown in the example above, you can use the `custom-icon` variable to insert 
 You can set the width of buttons to `fixed` using the variable `fixed-button-width: true`. This will set the width of all buttons to a fixed 50%. You can change this value in [links.html](https://github.com/digitalmalayali/linkhub-jekyll-theme/blob/main/_includes/links.html#L12).
 
 #### Setting Icon Position
-With version 0.1.6, it's now possible to set the position of icons to left or right using `icon-position: left`. Please note that setting the icon position will set it for all buttons. You can't do it for individual buttons. And tags will switch to the opposite position.
+With version [0.1.6](https://github.com/digitalmalayali/linkhub-jekyll-theme/releases/tag/v0.1.6), it's now possible to set the position of icons to left or right using `icon-position: left`. Please note that setting the icon position will set it for all buttons. You can't do it for individual buttons. And tags will switch to the opposite position.
 
 ### Remove Dark/Light Mode Switch
 To remove the dark/light mode switch, edit the [default.html](_layouts/default.html) layout file and remove or comment out the following line:
