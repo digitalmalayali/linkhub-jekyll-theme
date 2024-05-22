@@ -2,21 +2,21 @@
   ratio: vertical # For vertical 9:16 aspect ratio. Ideal for video thumbnails, such as those used on Instagram Reels, YouTube Shorts and TikTok. To use the default 1:1 aspect ratio (square), remove this variable.
   items:
     - url: https://www.example.com
-      image: https://picsum.photos/1080/920
+      image: https://picsum.photos/1080/920.webp
 
     - url: https://www.example.org
-      image: https://picsum.photos/540/960
+      image: https://picsum.photos/540/960.webp
 
     - url: https://www.example.com
-      image: https://picsum.photos/720/1280
+      image: https://picsum.photos/720/1280.webp
 
 - name: Instagram
   items:
     - url: https://www.example.com
-      image: https://picsum.photos/700/400 # You can use paths to images in the assets folder, e.g., assets/images/insta.jpg.
+      image: https://picsum.photos/700/400.webp # You can use paths to images in the assets folder, e.g., assets/images/insta.jpg.
 
     - url: https://www.example.org
-      image: https://picsum.photos/500
+      image: https://picsum.photos/500.webp
 
     - url: https://www.example.com
-      image: https://picsum.photos/250/300
+      image: https://picsum.photos/250/300.webp

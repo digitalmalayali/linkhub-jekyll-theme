@@ -8,7 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site.tagline }} - {{ site.name }}</title>
-    <link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ site.favicon.path }}" type="image/{{ site.favicon.type }}">
     <link rel="stylesheet" href="assets/style.css">
     <script src="https://code.iconify.design/2/2.0.0/iconify.min.js"></script>
     <meta name="description" content="{{ site.description }}">
@@ -34,8 +34,8 @@
         <header>
             <div class="top is-center is-vertical-align">
                 <img class="is-rounded" width="75px" height="75px" src="{{ site.logo }}" alt="logo">
-                <h3 class="text-center">{{ site.name }}{% if site.badge.enable == true %}<span class="iconify-inline badge"
-                        data-icon="{{ site.badge.icon }}" style="color: {{ site.badge.color }}"></span>{% endif %}</h3>
+                <h1 class="text-center">{{ site.name }}{% if site.badge.enable == true %}<span class="iconify-inline badge"
+                        data-icon="{{ site.badge.icon }}" style="color: {{ site.badge.color }}"></span>{% endif %}</h1>
                 <p class="text-center">{{ site.description }}</p>
             </div>
         </header>

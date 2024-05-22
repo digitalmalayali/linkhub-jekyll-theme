@@ -5,16 +5,18 @@ theme: linkhub-jekyll-theme
 name: Linkhub  # Name of your website
 tagline: Links  # Set your preferred page title
 description: A free, open-source Jekyll link-in-bio theme.  # Also used as a meta description
-favicon: https://picsum.photos/32/32 # Path / URL to the favicon of your website (e.g., 'assets/images/favicon.png')
-logo: https://picsum.photos/200 # Path / URL to the logo (e.g., 'assets/images/logo.png')
+favicon:
+  path: https://i.ibb.co/SBRmBmt/favicon.png # Path / URL to the favicon of your website (e.g., 'assets/images/favicon.png')
+  type: png # File format of image. Change according to your image. Supported types: https://developer.mozilla.org/en-US/docs/Web/Media/Formats/Image_types
+logo: https://picsum.photos/200.webp # Path / URL to the logo (e.g., 'assets/images/logo.png')
 url: https://link.example.com # URL of your website
 locale: en_GB # The value specifies the locale in which these tags are marked up. It follows the format `language_TERRITORY`.
-ga4: G-XXXXXXX # Google Analytics 4 measurement ID (optional). Remove it if not needed.
+ga4: G-XXXXXXX # Google Analytics 4 measurement ID (optional). Remove it if it’s not needed..
 twitter:
   username: UserName # Used for SEO
 image:
   path: assets/images/example.jpg # Used for SEO (og:image, twitter:image)
-  type: jpeg # File format of image. Change according to your image. Supported types: https://en.wikipedia.org/wiki/Media_type#Common_examples
+  type: jpeg # File format of image.
   height: 100 # Pixels
   width: 100
   alt: logo

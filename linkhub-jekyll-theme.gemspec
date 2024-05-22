@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "linkhub-jekyll-theme"
-  spec.version       = "0.1.5"
+  spec.version       = "0.1.6"
   spec.authors       = ["Digital Malayali"]
   spec.email         = ["social@digitalmalayali.in"]
 

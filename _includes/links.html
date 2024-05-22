@@ -1,18 +1,32 @@
 <main>
-    {% for category in site.data.links %}
-    <h5 class="text-center">{{ category.category }}</h5>
-    {% for item in category.items %}
+    {% for button in site.data.links.buttons %}
+    <h2 class="text-center">{{ button.category }}</h2>
+    {% for item in button.items %}
     <div class="row">
         {% if item.tag %}
         <div class="col link is-center">
             {% else %}
             <div class="col is-center">
                 {% endif %}
-                <a class="button outline secondary" href="{{ item.url }}" target="_blank">{% if item.icon %}<span
-                        class="iconify-inline" data-icon="{{ item.icon }}"></span>{% endif %}{% if item.custom-icon
-                    %}<span class="custom-icon">{{ item.custom-icon }}</span>{% endif %}{{ item.title }}
-                    {% if item.tag %}<span class="tag is-small bd-success text-success">{{ item.tag }}</span>{%
-                    endif %}</a>
+                {% if site.data.links.fixed-button-width == true %}
+                <a class="button outline secondary" style="width:50%" href="{{ item.url }}" target="_blank">
+                    {% else %}
+                    <a class="button outline secondary" href="{{ item.url }}" target="_blank">
+                        {% endif %}
+                        {% if site.data.links.icon-position == "right" %}
+                        {% if item.tag %}<span class="tag is-small bd-success text-success" style="margin-right:.2em">{{ item.tag }}</span>
+                        {% endif %}{{ item.title }}{% if item.icon %}<span class="iconify-inline"
+                            data-icon="{{ item.icon }}" style="margin-left:.5em;margin-right:0"></span>
+                        {% endif %}
+                        {% if item.custom-icon %}<span class="custom-icon" style="margin-left:.5em">{{ item.custom-icon }}</span>{% endif %}
+                    </a>
+                    {% else %}
+                    {% if item.icon %}<span class="iconify-inline" data-icon="{{ item.icon }}"></span>{% endif %}
+                    {% if item.custom-icon %}<span class="custom-icon" style="margin-right:.5em">{{ item.custom-icon }}</span>
+                    {% endif %}{{ item.title }}
+                    {% if item.tag %}<span class="tag is-small bd-success text-success" style="margin-left:.2em">{{ item.tag }}</span>
+                    {% endif %}</a>
+                {% endif %}
             </div>
         </div>
         {% endfor %}
